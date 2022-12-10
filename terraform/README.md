@@ -29,7 +29,7 @@ tf apply -target='module.certificate.aws_acm_certificate.this'
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.41.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.46.0 |
 
 ## Modules
 
@@ -41,7 +41,7 @@ tf apply -target='module.certificate.aws_acm_certificate.this'
 | <a name="module_dns-records"></a> [dns-records](#module\_dns-records) | ./modules/cloudflare-dns-record | n/a |
 | <a name="module_encryption-key"></a> [encryption-key](#module\_encryption-key) | ./modules/aws-kms | n/a |
 | <a name="module_load-balancer"></a> [load-balancer](#module\_load-balancer) | ./modules/aws-loadbalancer | n/a |
-| <a name="module_network"></a> [network](#module\_network) | ./modules/aws-network | n/a |
+| <a name="module_network"></a> [network](#module\_network) | github.com/benniemosher-dev/terraform-aws-network | v0.1.0 |
 
 ## Resources
 
