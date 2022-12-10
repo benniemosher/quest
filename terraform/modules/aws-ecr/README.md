@@ -23,7 +23,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_config"></a> [config](#input\_config) | The config to create the ECR repository with. | <pre>object({<br>    kms-key-arn         = optional(string, null)<br>    repository-name     = string<br>    scan-images-on-push = optional(bool, true)<br>  })</pre> | n/a | yes |
+| <a name="input_config"></a> [config](#input\_config) | The config to create ECR with. | <pre>object({<br>    kms-key-arn         = optional(string, null)<br>    repository-name     = string<br>    scan-images-on-push = optional(bool, true)<br>  })</pre> | n/a | yes |
 
 ## Outputs
 

@@ -1,5 +1,5 @@
 variable "config" {
-  description = "The config to create the ECR repository with."
+  description = "The config to create ECR with."
   type = object({
     kms-key-arn         = optional(string, null)
     repository-name     = string
