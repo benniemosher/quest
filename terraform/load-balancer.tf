@@ -1,8 +1,8 @@
 # TODO: Move the Load Balancer to internal
 # tfsec:ignore:aws-elb-alb-not-public tfsec:ignore:aws-ec2-no-public-ingress-sgr
 module "load-balancer" {
-  # source = "./modules/aws-loadbalancer"
-  source = "github.com/benniemosher-dev/terraform-aws-loadbalancer?ref=v0.1.0"
+  # source = "../../../benniemosher-dev/terraform-aws-loadbalancer"
+  source = "github.com/benniemosher-dev/terraform-aws-loadbalancer?ref=v0.2.0"
 
   config = {
     allowed-ingress-cidrs = var.cloudflare-config.cidrs

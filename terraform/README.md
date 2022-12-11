@@ -41,7 +41,7 @@ tf apply -target='module.certificate.aws_acm_certificate.this'
 | <a name="module_container-service"></a> [container-service](#module\_container-service) | github.com/benniemosher-dev/terraform-aws-ecs | v0.1.0 |
 | <a name="module_dns-records"></a> [dns-records](#module\_dns-records) | ./modules/cloudflare-dns-record | n/a |
 | <a name="module_encryption-key"></a> [encryption-key](#module\_encryption-key) | github.com/benniemosher-dev/terraform-aws-kms | v0.1.0 |
-| <a name="module_load-balancer"></a> [load-balancer](#module\_load-balancer) | github.com/benniemosher-dev/terraform-aws-loadbalancer | v0.1.0 |
+| <a name="module_load-balancer"></a> [load-balancer](#module\_load-balancer) | github.com/benniemosher-dev/terraform-aws-loadbalancer | v0.2.0 |
 | <a name="module_network"></a> [network](#module\_network) | github.com/benniemosher-dev/terraform-aws-network | v0.1.0 |
 
 ## Resources
