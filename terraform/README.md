@@ -30,12 +30,13 @@ tf apply -target='module.certificate.aws_acm_certificate.this'
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 4.46.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 3.29.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_certificate"></a> [certificate](#module\_certificate) | ./modules/aws-acm | n/a |
+| <a name="module_certificate"></a> [certificate](#module\_certificate) | github.com/benniemosher-dev/terraform-aws-acm | bam%2Fadd-terraform-aws-acm-module |
 | <a name="module_container-registry"></a> [container-registry](#module\_container-registry) | github.com/benniemosher-dev/terraform-aws-ecr | v0.1.0 |
 | <a name="module_container-service"></a> [container-service](#module\_container-service) | ./modules/aws-ecs | n/a |
 | <a name="module_dns-records"></a> [dns-records](#module\_dns-records) | ./modules/cloudflare-dns-record | n/a |
@@ -47,10 +48,12 @@ tf apply -target='module.certificate.aws_acm_certificate.this'
 
 | Name | Type |
 |------|------|
+| [cloudflare_record.certificate](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/record) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 | [aws_iam_policy_document.cloudwatch-kms](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_partition.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/partition) | data source |
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
+| [cloudflare_zone.zone](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/data-sources/zone) | data source |
 
 ## Inputs
 
