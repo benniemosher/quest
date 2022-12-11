@@ -1,14 +1,13 @@
-module "dns-records" {
-  source = "./modules/cloudflare-dns-record"
+resource "cloudflare_record" "dns-records" {
+  name    = local.sub-domain-name
+  proxied = true
+  type    = "CNAME"
+  value   = module.load-balancer.load-balancer-dns
+  zone_id = data.cloudflare_zone.zone.id
 
-  config = {
-    root-domain-name = local.domain-name
-    dns-record = {
-      name    = local.sub-domain-name
-      proxied = true
-      value   = module.load-balancer.load-balancer-dns
-    }
-  }
+  depends_on = [
+    module.load-balancer
+  ]
 }
 
 resource "cloudflare_record" "certificate" {
