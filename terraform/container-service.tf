@@ -1,5 +1,6 @@
 module "container-service" {
-  source = "./modules/aws-ecs"
+  # source = "./modules/aws-ecs"
+  source = "github.com/benniemosher-dev/terraform-aws-ecs?ref=v0.1.0"
 
   config = {
     cluster-name       = local.project-name
